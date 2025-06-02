@@ -150,7 +150,7 @@ void loop(){
   moveMotor(potBase, base);
 
   lcd.clear();
-  calculateTorques(1); // calculates the new torques
+  calculateTorques(0.5); // calculates the new torques
   lcd.setCursor(0, 0);
   lcd.print(String("Torque 1: ") + String(motorOneTorque)); // updates LCD
   lcd.setCursor(0, 1);
